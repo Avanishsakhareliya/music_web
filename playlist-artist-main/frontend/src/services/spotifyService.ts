@@ -3,7 +3,7 @@ import axios from 'axios';
 import { SpotifySearchResult, SpotifySearchResponse } from '@/types/spotify';
 
 // Define base URL for API
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://music-web-x4uy.onrender.com/api';
 
 // Axios instance with auth headers
 const axiosAuth = axios.create({

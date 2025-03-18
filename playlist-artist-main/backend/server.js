@@ -18,6 +18,12 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
+app.use(cors({
+  origin: "*",
+  credentials: true
+}))
+app.options('*', cors()); 
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('MongoDB connected'))
