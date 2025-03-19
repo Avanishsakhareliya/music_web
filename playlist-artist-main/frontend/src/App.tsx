@@ -35,7 +35,7 @@ const App = () => (
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/playlist/:id" element={<Playlist />} />
                 <Route path="/search" element={<Search />} />
-                <Route path="*" element={<NotFound />} />
+                <Route path="/*" element={<NotFound />} />
               </Routes>
             </AnimatePresence>
           </AuthProvider>
